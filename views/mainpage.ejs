@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Main Page - Shorten URL</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta>
+		
+		<link rel="stylesheet" href="/css/bootstrap.css">
+		<link rel="stylesheet" href="/css/layout.css">
+		<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container text-center">
+			<div id="content">
+				<h1 id="title">Url Shortener</h1>
+				<form id="url_form" action="/new/?*" method="get">
+					<div class="form-group">
+						<input type="text" placeholder="Example: http://www.google.com" name="url" id="url" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="submit" id="shortUrlBtn" class="btn btn-primary" value="Get Short Url">
+					</div>
+				</form>
+			</div>
+			
+			
+		</div>
+		<footer class="footer">
+			<div class="container text-center">
+					<div>
+			  		<a href="https://www.github.com/triminhvi" target="_blank"><i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i></a>
+			  		<a href="https://www.linkedin.com/in/vitri/" target="_blank"><i class="fa fa-linkedin fa-fw fa-lg" aria-hidden="true"></i></a>
+			  		<span id="test"></span>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Script -->
+		<script src="/js/jquery.js"></script>
+		<script src="/js/bootstrap.js"></script>
+		<script>
+			$(document).ready(function(){
+					console.log('ready');
+					// $('#shortUrlBtn').click(function(){
+					// 	var url = $('#url').val();
+					// 	console.log('Url: ' + url);
+					// });
+			})
+		</script>
+	</body>
+</html>
